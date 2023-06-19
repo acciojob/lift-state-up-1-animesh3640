@@ -5,7 +5,7 @@ const Parent =()=>{
         <div
         className="parent">
             <h1>Parent Component</h1>
-            {/* <Child></Child> */}
+            <Child></Child>
         </div>
     )
 }

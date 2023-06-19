@@ -1,11 +1,11 @@
 import React, { useState } from "react"
 
 const Child = () =>{
-    let [showModal,setShowModal]=useState(false);
+    let [showModal,setShowModal] = useState(false)
     return (
         <div className="child">
             <h2>Child Component</h2>
-            <button onClick={setShowModal(true)}>Show Modal</button>
+            <button onClick={()=>{setShowModal(true)}}>Show Modal</button>
             {
                 (showModal)&&(
                     <div>

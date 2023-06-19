@@ -1,7 +1,7 @@
 
 .parent{
     background-color: purple;
-    height: 200px;
+    /* height: 200px; */
     max-height: 400px;
     width: 600px;
     padding: 20px;
@@ -12,7 +12,7 @@
 
 .child{
     background-color: brown;
-    height: 100px;
+    /* height: 100px; */
     max-height: 300px;
     width: 600px;
 }
