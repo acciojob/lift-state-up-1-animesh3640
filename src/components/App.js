@@ -1,12 +1,17 @@
 
-import React from "react";
+import React, { useState } from "react";
 import './../styles/App.css';
-
+import Child from "./Child";
 const App = () => {
+  let [showModal,setShowModal] = useState(false)
   return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
+        <div className="parent">
+            <Child
+              showModal={showModal}
+              changeState = {setShowModal}
+            >  
+            </Child>
+        </div>
   )
 }
 
