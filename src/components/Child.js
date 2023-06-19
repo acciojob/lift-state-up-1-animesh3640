@@ -1,14 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 
-const Child = ({showModal,changeState}) =>{
+const Child = () =>{
+    let [showModal,setShowModal]=useState(false);
     return (
         <div className="child">
             <h2>Child Component</h2>
-            <button onClick={changeState(true)}>Show Modal</button>
+            <button onClick={setShowModal(true)}>Show Modal</button>
             {
                 (showModal)&&(
                     <div>
-                        <h2>Modal Content</h2>
+                        <h3>Modal Content</h3>
                         <p>This is modal content</p>
                     </div>
                 )
